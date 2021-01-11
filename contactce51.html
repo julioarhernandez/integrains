@@ -235,7 +235,11 @@
 				<div class="col-md-8 col-sm-8 col-xs-12">
 					<!-- Map start here -->
 						<div style='overflow:hidden;height:351px;width:100%;'>
-							<div id='gmap_canvas' style='height:351px;width:100%;'></div>
+							<div id='gmap_canvas' style='height:351px;width:100%;'>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.244745106482!2d-80.31478368497906!3d25.762478383636434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b852f952b2bb%3A0xc4edf03076399a1f!2s7230%20SW%208th%20St%2C%20Miami%2C%20FL%2033144!5e0!3m2!1sen!2sus!4v1610384898705!5m2!1sen!2sus"
+										width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+										aria-hidden="false" tabindex="0"></iframe>
+							</div>
 						</div>
 					<!-- Map end here -->
 
@@ -549,13 +553,8 @@ $ZC("#zc_trackCode").val(trackingText);
     
  
 
-	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCknJqWUhBtjqQrtNMRbGIbC46vO7L9_iA&amp;v=3.exp'></script>
-	
 	<!-- Template custom -->
 	<script type="text/javascript" src="js/custom.js"></script>
-	<script type='text/javascript'>
-	function init_map(){var myOptions = {zoom:16,scrollwheel: false,center:new google.maps.LatLng(25.762777613949407,-80.31225801282807),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(25.7625434,-80.3127537)});infowindow = new google.maps.InfoWindow({content:'<strong>Integra Insurance</strong><br>7230 sw 8th st<br>33144 Miami<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-	    </script>
 	</div>
 	</div><!-- Body inner end -->
 </body>
